@@ -45,7 +45,13 @@ std::vector<int> VectorTimesN(std::vector<int> v, int n);
 
 // takes in two integers and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
-std::vector<int> Multiples(int n, int m);
+std::vector<int> Multiples(int n, int m){
+	std::vector<int> multiples;
+	for(int i=1;i<=m;i++){
+		multiples.push_back(n*i);
+	}
+	return multiples;
+}
 
 // takes an integer n that is >= 0 and returns a vector of all squares up to n^n (1^1, 2^2, 3^3, .... n^n)
 std::vector<int> SquaresUntil(int n);
