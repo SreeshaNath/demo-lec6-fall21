@@ -145,14 +145,14 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
 
-int main(){
-	// std::cout << Factorial (5) <<std::endl;
-	// std::vector<int> v{1,2,3};
-	// std::vector<int> res = AddN(v, 5);
-	// for(int i=0;i<res.size();i++){
-	// 	std::cout<<res[i]<<" ";
-	// }
-	// std::cout << RemoveTwos(16) << std::endl;
-	// std::cout << RemoveTwos(26) << std::endl;
-	// std::cout << RemoveTwos(36) << std::endl;
-}
+// int main(){
+// 	// std::cout << Factorial (5) <<std::endl;
+// 	// std::vector<int> v{1,2,3};
+// 	// std::vector<int> res = AddN(v, 5);
+// 	// for(int i=0;i<res.size();i++){
+// 	// 	std::cout<<res[i]<<" ";
+// 	// }
+// 	// std::cout << RemoveTwos(16) << std::endl;
+// 	// std::cout << RemoveTwos(26) << std::endl;
+// 	// std::cout << RemoveTwos(36) << std::endl;
+// }
