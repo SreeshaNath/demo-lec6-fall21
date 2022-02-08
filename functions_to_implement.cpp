@@ -27,7 +27,14 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
 // divides an input integer by 2 until it is impossible to do so, then returns the final number.
 // (16 = 2 * 2 * 2 * 2 * 1 -> 1, 7 -> 7, 26 = 2 * 13 -> 13, 52 = 2 * 2 * 13 -> 13)
-int RemoveTwos(int original);
+int RemoveTwos(int original){
+	while(original > 0){
+		if(original%2 != 0)
+			return original;
+		original = original/2;
+	}
+	return 1;
+}
 
 // takes a vector of integers and removes all elements evenly divisible by the passed in int
 std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
@@ -139,10 +146,13 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 std::vector<double> SubtractN(std::vector<double>, double n);
 
 // int main(){
-// 	std::cout << Factorial (5) <<std::endl;
-// 	std::vector<int> v{1,2,3};
-// 	std::vector<int> res = AddN(v, 5);
-// 	for(int i=0;i<res.size();i++){
-// 		std::cout<<res[i]<<" ";
-// 	}
+// 	// std::cout << Factorial (5) <<std::endl;
+// 	// std::vector<int> v{1,2,3};
+// 	// std::vector<int> res = AddN(v, 5);
+// 	// for(int i=0;i<res.size();i++){
+// 	// 	std::cout<<res[i]<<" ";
+// 	// }
+// 	// std::cout << RemoveTwos(16) << std::endl;
+// 	// std::cout << RemoveTwos(26) << std::endl;
+// 	// std::cout << RemoveTwos(36) << std::endl;
 // }
